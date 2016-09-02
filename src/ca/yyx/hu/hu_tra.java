@@ -269,7 +269,7 @@ Internal classes:
 	String[] ipAddressInArray = myip_string.split("\\.");
 	for (int i = 0; i < ipAddressInArray.length; i++) {
 	int power = 3 - i;
-	int ip = Integer.parseInt(ipAddressInArray[power]);
+	int ip = Integer.parseInt(ipAddressInArray[i]);
 	ip_result += ip * Math.pow(256, power);
 	}
 	}
